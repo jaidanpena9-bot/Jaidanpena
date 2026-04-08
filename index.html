@@ -129,165 +129,6 @@ nav.stuck{background:rgba(6,6,10,.9);backdrop-filter:blur(16px);border-color:var
 
 @keyframes fadeup{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 
-/* ── EXTRA SECTIONS ── */
-.proof-strip{
-  background:var(--surface);
-  padding:2rem 2.5rem;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-}
-.proof-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:var(--border);
-  border:1px solid var(--border);
-  border-radius:14px;
-  overflow:hidden;
-}
-.proof-card{
-  background:var(--card);
-  padding:1.5rem 1.6rem;
-}
-.proof-card h3{
-  font-family:'Syne',sans-serif;
-  font-weight:700;
-  font-size:1rem;
-  margin-bottom:.35rem;
-}
-.proof-card p{
-  color:var(--muted);
-  font-size:.86rem;
-  line-height:1.65;
-}
-
-.preview-section{
-  background:var(--surface);
-}
-.preview-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1.2rem;
-  margin-top:2rem;
-}
-.preview-card{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:16px;
-  overflow:hidden;
-  transition:transform .2s,border-color .2s;
-}
-.preview-card:hover{
-  transform:translateY(-4px);
-  border-color:var(--border-hover);
-}
-.preview-shot{
-  height:220px;
-  background:linear-gradient(180deg,#16161f 0%, #0c0c12 100%);
-  border-bottom:1px solid var(--border);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:var(--muted2);
-  font-size:.85rem;
-  text-transform:uppercase;
-  letter-spacing:.12em;
-}
-.preview-info{
-  padding:1.25rem;
-}
-.preview-label{
-  font-size:.68rem;
-  color:var(--lime);
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  margin-bottom:.45rem;
-}
-.preview-title{
-  font-family:'Syne',sans-serif;
-  font-size:1.05rem;
-  margin-bottom:.35rem;
-}
-.preview-text{
-  color:var(--muted);
-  font-size:.84rem;
-  line-height:1.65;
-  margin-bottom:1rem;
-}
-.preview-link{
-  color:var(--text);
-  text-decoration:none;
-  font-size:.82rem;
-  border-bottom:1px solid rgba(255,255,255,.15);
-  padding-bottom:.1rem;
-}
-.preview-link:hover{
-  color:var(--lime);
-  border-color:var(--lime);
-}
-
-.benefits{
-  background:var(--bg);
-}
-.benefits-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:var(--border);
-  border:1px solid var(--border);
-  border-radius:14px;
-  overflow:hidden;
-  margin-top:2rem;
-}
-.benefit{
-  background:var(--card);
-  padding:2rem;
-}
-.benefit-num{
-  font-family:'Syne',sans-serif;
-  font-size:2rem;
-  color:var(--lime);
-  margin-bottom:.8rem;
-}
-.benefit h3{
-  font-family:'Syne',sans-serif;
-  font-size:1rem;
-  margin-bottom:.45rem;
-}
-.benefit p{
-  color:var(--muted);
-  font-size:.84rem;
-  line-height:1.7;
-}
-
-.testimonials{
-  background:var(--surface);
-}
-.testimonial-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1rem;
-  margin-top:2rem;
-}
-.testimonial{
-  background:var(--card);
-  border:1px solid var(--border);
-  border-radius:14px;
-  padding:1.5rem;
-}
-.testimonial-text{
-  font-size:.92rem;
-  line-height:1.8;
-  color:var(--text);
-  margin-bottom:1rem;
-}
-.testimonial-meta{
-  color:var(--muted);
-  font-size:.78rem;
-  text-transform:uppercase;
-  letter-spacing:.12em;
-}
-
 /* ── MARQUEE ── */
 .ticker{
   overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);
@@ -509,13 +350,11 @@ footer{
   .nav-links{display:none}
   .hero{padding:7rem 1.5rem 4rem}
   section{padding:5rem 1.5rem}
-  .work-grid,.pricing-grid,
-  .proof-grid,.preview-grid,.benefits-grid,.testimonial-grid{grid-template-columns:1fr}
+  .work-grid,.pricing-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr;gap:1.5rem}
   .steps::before{display:none}
   .tools-grid{grid-template-columns:1fr 1fr}
   #contact{padding:5rem 1.5rem}
-  .proof-strip{padding:2rem 1.5rem}
   footer{flex-direction:column;text-align:center}
 }
 @media(max-width:520px){
@@ -576,23 +415,6 @@ footer{
   </div>
 </section>
 
-<div class="proof-strip">
-  <div class="proof-grid">
-    <div class="proof-card">
-      <h3>Built for local businesses</h3>
-      <p>I focus on websites for real businesses that need more calls, more leads, and a better first impression online.</p>
-    </div>
-    <div class="proof-card">
-      <h3>Fast turnaround</h3>
-      <p>Most projects are designed and launched in about a week, so you can get online fast without waiting months.</p>
-    </div>
-    <div class="proof-card">
-      <h3>Made to convert</h3>
-      <p>Every site is built to be clean, mobile-friendly, and easy for customers to contact, book, or buy.</p>
-    </div>
-  </div>
-</div>
-
 <div class="ticker">
   <div class="ticker-track">
     <span class="ticker-item">Web Design</span>
@@ -613,8 +435,8 @@ footer{
 </div>
 
 <section id="work">
-  <div class="eyebrow">Projects</div>
-  <h2>Projects I’ve Done</h2>
+  <div class="eyebrow">Recent work</div>
+  <h2>Sample projects</h2>
   <p class="section-sub">Click any project to see the full live site.</p>
   <div class="work-grid">
 
@@ -660,44 +482,6 @@ footer{
   </div>
 </section>
 
-<section class="preview-section">
-  <div class="eyebrow">Project breakdowns</div>
-  <h2>What each project<br>is designed to show.</h2>
-  <p class="section-sub">These projects show how I design websites for different types of local businesses.</p>
-
-  <div class="preview-grid">
-    <div class="preview-card">
-      <div class="preview-shot">Fade &amp; Co Preview</div>
-      <div class="preview-info">
-        <div class="preview-label">Barbershop</div>
-        <div class="preview-title">Fade &amp; Co.</div>
-        <div class="preview-text">Clean services, strong branding, and a booking-focused layout designed to make a barbershop look premium online.</div>
-        <a href="https://jaidanpena9-bot.github.io/fade-and-co/" target="_blank" class="preview-link">Open live site ↗</a>
-      </div>
-    </div>
-
-    <div class="preview-card">
-      <div class="preview-shot">Pro Flow Preview</div>
-      <div class="preview-info">
-        <div class="preview-label">Plumbing</div>
-        <div class="preview-title">Pro Flow Plumbing</div>
-        <div class="preview-text">Built to generate leads with clear service sections, trust-building layout, and strong contact actions for homeowners.</div>
-        <a href="https://jaidanpena9-bot.github.io/proflow-plumbing/" target="_blank" class="preview-link">Open live site ↗</a>
-      </div>
-    </div>
-
-    <div class="preview-card">
-      <div class="preview-shot">Mesa Kitchen Preview</div>
-      <div class="preview-info">
-        <div class="preview-label">Restaurant</div>
-        <div class="preview-title">Mesa Kitchen</div>
-        <div class="preview-text">Designed to make menu info, hours, and ordering actions easy to find so customers can decide fast.</div>
-        <a href="https://jaidanpena9-bot.github.io/mesa-kitchen/" target="_blank" class="preview-link">Open live site ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="process">
   <div class="eyebrow">How it works</div>
   <h2>Simple process,<br>fast results.</h2>
@@ -721,30 +505,6 @@ footer{
       <div class="step-circle">04</div>
       <h3>Goes live</h3>
       <p>Your site is published and ready for customers.</p>
-    </div>
-  </div>
-</section>
-
-<section class="benefits">
-  <div class="eyebrow">Why it matters</div>
-  <h2>What a better website<br>actually does for a business.</h2>
-  <p class="section-sub">A website should do more than just exist. It should help your business look credible and make it easy for customers to take the next step.</p>
-
-  <div class="benefits-grid">
-    <div class="benefit">
-      <div class="benefit-num">01</div>
-      <h3>More trust</h3>
-      <p>A polished site makes your business look more established and professional the moment someone lands on it.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-num">02</div>
-      <h3>More inquiries</h3>
-      <p>Clear calls to action, simple contact flows, and mobile-first design help turn visitors into real leads.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-num">03</div>
-      <h3>Better customer experience</h3>
-      <p>Customers should be able to find hours, services, pricing, and contact info fast without digging around.</p>
     </div>
   </div>
 </section>
@@ -801,27 +561,6 @@ footer{
       <a href="#contact" class="price-cta">Get started</a>
     </div>
 
-  </div>
-</section>
-
-<section class="testimonials">
-  <div class="eyebrow">Projects</div>
-  <h2>What these projects<br>are built to do.</h2>
-  <p class="section-sub">These are example builds showing how I design websites for local businesses.</p>
-
-  <div class="testimonial-grid">
-    <div class="testimonial">
-      <div class="testimonial-text">Designed to make a business look more professional and trustworthy online.</div>
-      <div class="testimonial-meta">First impression</div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial-text">Built to be simple, mobile-friendly, and easy for customers to navigate.</div>
-      <div class="testimonial-meta">User experience</div>
-    </div>
-    <div class="testimonial">
-      <div class="testimonial-text">Focused on turning visitors into real calls, messages, or customers.</div>
-      <div class="testimonial-meta">Conversion focused</div>
-    </div>
   </div>
 </section>
 
